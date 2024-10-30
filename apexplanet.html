@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .div1 img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 10px;
+        }
+
+        .container1 {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container .div2 a {
+            margin-top: 50px;
+            font-size: xx-large;
+            color: black;
+            font-weight: bold;
+        }
+
+        .container2 {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container2 a {
+            font-size: medium;
+            color: black;
+            margin-left: 30px;
+            font-weight: 500;
+        }
+
+        .container2 a:hover {
+            color: blueviolet;
+        }
+
+        .div7 button {
+            margin-top: 10px;
+            margin-left: 650px;
+            padding: 10px 40px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            border: solid 2px gray;
+        }
+
+        .div7 button a {
+            color: white;
+            font-weight: 600;
+        }
+
+        .div8 {
+            background-image: url(creatify2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 2000px;
+            height: 100vh;
+            margin: 10px;
+
+        }
+
+        .div8 h1 {
+            margin-top: 200px;
+            margin-bottom: 20px;
+            color: black;
+            font-size: 60px;
+        }
+
+        .div8 h4 {
+            margin-bottom: 20px;
+            color: black;
+            font-size: 20px;
+
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+
+        .div8 button {
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 15px 30px;
+            border: solid 2px gray;
+
+        }
+
+        .div8 button a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .container3 {
+            margin-right: 450px;
+        }
+
+        .container3 h2 {
+            margin-left: 600px;
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+
+        .container3 h4 {
+            text-align: center;
+            margin-left: 500px;
+            margin-bottom: 40px;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+        }
+
+        .img1 img {
+            width: 150px;
+            height: 200px;
+            margin-left: 20px;
+            margin-right: 60px;
+        }
+
+        .img2 img {
+            width: 150px;
+            height: 200px;
+            margin-left: 20px;
+            margin-right: 60px;
+        }
+
+        .img3 img {
+            width: 150px;
+            height: 200px;
+            margin-left: 20px;
+        }
+
+        .project {
+            margin-left: 180px;
+        }
+
+        .div12 h2 {
+            margin-left: 650px;
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+
+        .div12 h4 {
+            margin-left: 420px;
+            margin-right: 200px;
+            margin-bottom: 30px;
+        }
+
+        .div9 button {
+            margin-top: 45px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: white;
+            color: blueviolet
+        }
+
+        .div10 button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: white;
+            color: blueviolet
+        }
+
+        .div11 button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 25px;
+            background-color: white;
+            color: blueviolet
+        }
+
+        .container4 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-left: 180px;
+
+        }
+
+        .image4 img {
+            width: 140px;
+            height: 100px;
+            margin-left: 40px;
+            margin-right: 70px;
+
+
+        }
+
+        .image5 img {
+            width: 140px;
+            height: 100px;
+            margin-left: 40px;
+            margin-right: 70px;
+            border: solid 1px black;
+
+        }
+
+        .image6 img {
+            width: 140px;
+            height: 100px;
+            margin-left: 40px;
+            margin-right: 90px;
+
+
+        }
+
+        .div16 h2 {
+            margin-left: 480px;
+            margin-top: 60px;
+            margin-bottom: 20px;
+            margin-right: 500px;
+
+        }
+
+        .container5 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-bottom: 150px;
+
+        }
+
+        .div17 p {
+            margin-right: 60px;
+        }
+
+        .div18 p {
+            margin-right: 60px;
+        }
+
+        .div19 p {
+            margin-right: 60px;
+        }
+
+        .div20 h2 {
+            margin-left: 400px;
+            margin-right: 500px;
+            margin-bottom: 20px;
+
+        }
+
+        .container6 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-right: 200px;
+
+        }
+
+        .div21 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+
+        }
+
+        .div22 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+        }
+
+        .div23 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .name1 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 170px
+        }
+
+        .name1 h3 {
+            margin-right: 10px;
+        }
+
+        .name2 h3 {
+            margin-right: 10px;
+        }
+
+        .name3 h3 {
+            margin-right: 10px;
+        }
+
+        .name2 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 150px
+        }
+
+        .name3 {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            margin-right: 10px
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .name1 .rate span {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container7 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+        }
+
+        .div24 p {
+            margin-right: 60px;
+        }
+
+        .div25 p {
+            margin-left: 160px;
+            margin-right: 190px;
+        }
+
+        .div27 {
+            margin-top: 200px;
+            margin-left: 320px;
+            margin-right: 500px;
+            margin-bottom: 20px;
+            color: blueviolet;
+        }
+
+        .div27 h1 {
+            font-size: 35px;
+        }
+
+        .div28 p {
+            margin-left: 240px;
+            margin-right: 400px;
+            margin-bottom: 8px;
+        }
+
+        .div29 p {
+            margin-left: 480px;
+            margin-right: 650px;
+            margin-bottom: 15px;
+        }
+
+        .div30 button {
+            background-color: blueviolet;
+            color: white;
+            margin-bottom: 10px;
+            margin-left: 520px;
+            margin-right: 650px;
+            border-radius: 5px;
+            padding: 8px;
+            border: solid 1px gray;
+        }
+
+        .div31 img {
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            margin-left: 5px;
+        }
+
+        .footer {
+            border: solid 2px black;
+            background-color: black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* display: flex;
+            flex-direction: row;
+            justify-content: flex-start; */
+            color: white;
+            width: 5000px;
+            height: 100ph;
+            margin-top: 40px;
+
+        }
+
+        .container9 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+
+        .container10 {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        .container11 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+
+        }
+
+        .div32 p {
+            font-size: larger;
+            margin-right: 800px;
+            margin-top: 5px;
+        }
+
+        .div33 {
+            margin-left: 1220px;
+            margin-bottom: 10px;
+
+        }
+
+        .container11 {
+            margin-left: 1220px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+        }
+
+        .container11 button {
+            border-radius: 5px 10px 5px 5px;
+            background-color: black;
+            border: solid 1px gray;
+
+        }
+
+
+        .container11 .div35 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            color: black;
+            border-radius: 10px;
+
+
+        }
+
+        .container11 #click {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-right: 1px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            padding: 5px;
+
+        }
+
+        .container12 {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .container12 .a1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+
+        }
+
+        .container12 .a2 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+
+        }
+
+        .container12 .a3 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+
+        }
+
+        .container12 .a4 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+
+        }
+
+        .container12 .a5 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+
+
+        }
+
+        .container12 .a6 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+        }
+
+        .container12 .a7 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0px 20px;
+        }
+
+        .div36 {
+
+            margin-left: 300px;
+        }
+
+        .logo2 img {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            margin-left: 60px;
+
+        }
+
+        .logo3 img {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            margin-left: 30px;
+        }
+
+        .logo4 img {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            margin-left: 30px;
+        }
+
+        .logo5 img {
+            width: 20px;
+            height: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-radius: 5px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div1">
+            <span><img src="icon.jpeg" alt="icon image" /></span>
+        </div>
+        <div class="container1">
+            <div class="div2"><a href="#">WebGalleria</a></div>
+        </div>
+        <div class="container2">
+            <div class="div3"><a href="#">Home</a></div>
+            <div class="div4"><a href="#">About Us</a></div>
+            <div class="div5"><a href="#">Services</a></div>
+            <div class="div6"><a href="#">Portfolio</a></div>
+            <div class="div7"> <a href="#">Contact Us</a></div>
+        </div>
+        <div class="div7"><button><a href="#">Get in Touch</a></button></div>
+        <div class="div8">
+            <h1>Welcome to Creatify Agency</h1>
+            <h4>Innovative solutions for your creative needs</h4>
+            <button><a>Get Started</a></button>
+        </div>
+        <div class="container3">
+            <h2>Featured Project Section</h2>
+            <h4>Explore our top web development projects, showcasting innovation and expertise.</h4>
+        </div>
+        <div class="project">
+            <div class="div9">
+                <h3> Tech Startup</h3>
+                <p>A sleek, modern website</p>
+                <P>designed for a</P>
+                <p>technology startup</p>
+                <p>design and interactive</p>
+                <p>elements.</p>
+                <button>View Project</button>
+            </div>
+            <div class="img1">
+                <img src="image1.jpg" alt="tech sartup" />
+            </div>
+            <div class="div10">
+                <h3>Fashion</h3>
+                <h3>E-commerce</h3>
+                <p>An e-commerce platform</p>
+                <p>developed for a fashion</p>
+                <p>seamless shopping</p>
+                <p>experience and</p>
+                <p>personalised</p>
+                <P>recommendations.</P>
+                <button>View project</button>
+            </div>
+            <div class="img2">
+                <img src="image2.jpg" alt="fashion e commerce" />
+            </div>
+            <div class="div11">
+                <h3>Artist Portfolio</h3>
+                <p>A portfolio website</p>
+                <p>showcasting the works of</p>
+                <p>a freelance with a</p>
+                <p>designed with a</p>
+                <p>minimalist aesthetic and</p>
+                <p>easy navigation.</p>
+                <button>View Project</button>
+            </div>
+        </div>
+        <div class="img3">
+            <img src="image3.jpg" alt="Artist portfolio" />
+        </div>
+        <div class="div12">
+            <h2>About Us</h2>
+            <h4>We are a full-service digital agency specializing in UI/Ux Design, Web Development, and Digital
+                Marketing.</h4>
+        </div>
+        <div class="container4">
+            <div class="div13">
+                <h3>UI/UX Design</h3>
+                <p>Crafting intuitive and</p>
+                <p>visually appearing</p>
+                <p>interfaces.</p>
+            </div>
+            <div class="image4">
+                <img src="image4.jpg" alt="ui/ux" />
+            </div>
+            <div class="div14">
+                <h3>web</h3>
+                <h3>Development</h3>
+                <p>Building responsive and</p>
+                <p>robust websites.</p>
+            </div>
+            <div class="image5">
+                <img src="image5.jpg" alt="web develop" />
+            </div>
+            <div class="div15">
+                <h3>Digital Marketing</h3>
+                <p>Enhancing online</p>
+                <p>presence through</p>
+                <p>effective digital</p>
+                <p>strategies</p>
+            </div>
+            <div class="image6">
+                <img src="image6.jpg" alt="digital" />
+            </div>
+            <div class="div16">
+                <h2>Our Services</h2>
+            </div>
+            <div class="container5">
+                <div class="div17">
+                    <h3>Testimonals</h3>
+                    <p>Hear from our satisfied clients and their experiences</p>
+                    <p>with our services.</p>
+                </div>
+                <div class="div18">
+                    <h3>Web Development</h3>
+                    <p>Explore our cutting-edge web development services</p>
+                    <p>tailored to your needs.</p>
+                </div>
+                <div class="div19">
+                    <h3>Digital Marketing</h3>
+                    <p>Boost your business with our comprehensive digital</p>
+                    <p>marketing solutions.</p>
+                </div>
+            </div>
+            <div class="div20">
+                <h2>Heart from our awesome users!</h2>
+            </div>
+            <div class="container6">
+                <div class="div21">
+                    <img src="image7.jpg" alt="alice">
+                </div>
+                <div class="name1">
+                    <h3>Alice Thompson</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+
+                <div class="div22">
+                    <img src="image8.jpg" alt="michael">
+                </div>
+                <div class=name2>
+                    <h3>
+                        Michael Green
+                    </h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class="div23">
+                    <img src="image9.jpg" alt="sophia">
+                </div>
+                <div class="name3">
+                    <h3>Sophial Lee</h3>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="container7">
+                <div class="div24">
+                    <p>WebGalleria transformed our online</p>
+                    <p>presence</p>
+                </div>
+                <div class="div25">
+                    <p>Exceptional design and user-friendly</p>
+                    <p>interface.</p>
+                </div>
+                <div class="div26">
+                    <p>Incresaed our engagement by 50%.</p>
+                </div>
+            </div>
+            <div>
+
+            </div class="container8">
+            <div class="div27">
+                <h1>Ready to transfor your brand?</h1>
+            </div>
+
+            <div class="div28">
+                <p>Take the first step to elevating your brands presence. Connect with us totad to discuss your vision
+                </p>
+            </div>
+            <div class="div29">
+                <p>and how to bring it to life.</p>
+            </div>
+            <div class="div30"><button>Get to touch</button></div>
+        </div>
+        <div class="footer">
+            <div class="container9">
+                <div class="div31"><img src="logo.jpg" alt="gallery"></div>
+                <div class="div32">
+                    <p>GalleryNest</p>
+                </div>
+            </div>
+            <div class="container10">
+                <div class="div33">Subscribe to our newsletter</div>
+                <div class="container11">
+                    <button>
+                        <div class="div35"><input type="email" placeholder="Input your email"> </div>
+                    </button>
+                    <button id="click" onclick="onSubscribeClick()">Subcribe</button>
+                </div>
+                <div class="container12">
+                    <div class="a1"><a href="#">Pricing</a></div>
+                    <div class="a2"><a href="#">About us</a></div>
+                    <div class="a3"><a href="#">Features</a></div>
+                    <div class="a4"><a href="#">Help Center</a></div>
+                    <div class="a5"><a href="#">Contact us</a></div>
+                    <div class="a6"><a href="#">FAQs</a></div>
+                    <div class="a7"><a href="#">Careers</a></div>
+                    <div class="div36">2024 Brand,Inc, .Privacy.Terms.Sitemap</div>
+                    <div class="logo2"><img src="twitter.jpg" alt="log2"></div>
+                    <div class="logo3"><img src="face1.jpg" alt="log3"></div>
+                    <div class="logo4"><img src="linked.jpg" alt="log4"></div>
+                    <div class="logo5"><img src="you.jpg" alt="log5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function onSubscribeClick() {
+            let email = document.querySelector(".div35 input").value;
+            let subcribe = document.getElementById("click");
+            alert("Your subscribed email: " + email);
+        }
+    </script>
+</body>
+
+</html>
