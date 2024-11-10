@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p {
+            font-size: 90px;
+            text-align: center;
+        }
+
+        input {
+
+            padding: 20px;
+            width: 400px;
+            height: 20px;
+            border-radius: 50px 0px 0px 50px;
+            border: 1px solid lightgray;
+            background: lightgray;
+        }
+
+        .addbutton {
+            padding: 10px;
+            border: none;
+            border-radius: 0px 100px 100px 0px;
+            background-color: lightcoral;
+            width: 100px;
+            height: 42px;
+            outline: none;
+
+        }
+
+        .todocontainer {
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+            border-radius: 30px;
+            padding-left: 20px;
+            margin-bottom: 60px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 40px;
+            width: 500px;
+            height: 0px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+            margin-left: 600px;
+
+
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Just do it.</p>
+    <div class="todocontainer">
+        <input name="todo" id="todo" placeholder="Add Todo" />
+        <button class="addbutton" onclick="todoFunction()">Add </button>
+    </div>
+    <table id="todoTable">
+        <tr>
+            <th>Content</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+    <script>
+        function todoFunction() {
+            let inputValue = document.getElementById("todo").value;
+            if (inputValue === "") {
+                alert("Please enter a todo item.");
+                return;
+            }
+
+            var row = document.createElement("tr");
+            row.setAttribute("id", inputValue);
+
+            // Create content cell
+            var contentTD = document.createElement("td");
+            contentTD.textContent = inputValue;
+            row.appendChild(contentTD);
+
+            // Create edit button cell
+            var editButtonTD = document.createElement("td");
+            var editButton = document.createElement("button");
+            editButton.innerHTML = "edit";
+            editButton.onclick = function () {
+                editTodo(row, contentTD);
+            };
+            editButtonTD.appendChild(editButton);
+            row.appendChild(editButtonTD);
+
+            // Create delete button cell
+            var deleteButtonTD = document.createElement("td");
+            var deleteButton = document.createElement("button");
+            deleteButton.innerHTML = "Delete";
+            deleteButton.onclick = function () {
+                deleteTodo(row);
+            };
+            deleteButtonTD.appendChild(deleteButton);
+            row.appendChild(deleteButtonTD);
+
+            // Append row to table
+            document.getElementById("todoTable").appendChild(row);
+            document.getElementById("todo").value = ""; // Clear input
+        }
+
+        function editTodo(row, contentTD) {
+            let currentContent = contentTD.textContent;
+
+            // Replace content text with an input field
+            contentTD.innerHTML = `<input type="text" value="${currentContent}" />`;
+            let inputField = contentTD.querySelector("input");
+
+            // Change Edit button to Save
+            row.querySelector("button").innerText = "Save";
+            row.querySelector("button").onclick = function () {
+                contentTD.textContent = inputField.value; // Save new content
+                row.querySelector("button").innerText = "Edit"; // Restore Edit button
+                row.querySelector("button").onclick = function () {
+                    editTodo(row, contentTD); // Re-attach Edit functionality
+                };
+            };
+        }
+
+        function deleteTodo(row) {
+            row.remove(); // Remove the row from the table
+        }
+    </script>
+</body>
+
+</html>
